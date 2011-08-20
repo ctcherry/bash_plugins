@@ -29,8 +29,10 @@ bp_call_prompt_commands() {
 
 
 bp_load_plugins() {
-  for plugin in ~/.bash_plugins/enabled_plugins/**/init.sh
-  do
-    source $plugin
-  done
+  if [ -e ~/.bash_plugins/enabled_plugins/**/init.sh ]; then
+    for plugin in ~/.bash_plugins/enabled_plugins/**/init.sh
+    do
+      source $plugin
+    done
+  fi
 }
