@@ -12,4 +12,4 @@ bp_add_prompt_command "lastdir_prompt_command"
 
 # run when shell is loaded
 
-[ -f ~/.lastdir ] && cd `cat ~/.lastdir`
+[ -f ~/.lastdir ] && cd "`cat ~/.lastdir`"
